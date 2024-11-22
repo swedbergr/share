@@ -11,8 +11,7 @@ def main():
     print("1. Display tasks",
          "\n2. Add tasks",
          "\n3. Mark task as complete",
-         "\n4. Remove Task",
-         "\n5. Save and exit")
+         "\n4. Save and exit")
 
     # Get user choice
     choice = input()
@@ -25,12 +24,11 @@ def main():
     elif choice == "3":
       complete(tasks)
     elif choice == "4":
-      remove(tasks)
-    elif choice == "5":
       save_tasks(tasks)
-      # Exit program
       print("Thank you for using Task Tracker.")
       break
+    else:
+      print("That is not a valid option.")
 
 
 
@@ -41,7 +39,7 @@ def main():
 
 
 
-# Create a function called add_tasks that takes a list of tasks, prompts
+# Create a function called add_task that takes a list of tasks, prompts
 # the user for another task, and then appends the new tasks to the 
 # end of the list.
 
